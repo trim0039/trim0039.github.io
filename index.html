@@ -1,12 +1,18 @@
-<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
-<style>
-  .thermometer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 2100px;
-    margin: 0 auto;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thermometers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+  <style>
+    .thermometer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 2100px;
+      margin: 0 auto;
+    }
   
   .thermometer {
     width: 800px !important;
@@ -24,28 +30,29 @@
   .thermometer-title {
     text-align: center;
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 10px;
     color: rgb(39,65,87);
     font-family: 'Varela Round';
   }
 </style>
-
-<div class="thermometer-container">
-  <div class="thermometer-wrapper">
-    <h2 class="thermometer-title">AWS</h2>
-    <svg id="fundraising-thermometer-510-1" class="thermometer"></svg>
+</head>
+<body>
+  <div class="thermometer-container">
+    <div class="thermometer-wrapper">
+      <h2 class="thermometer-title">AWS</h2>
+      <svg id="fundraising-thermometer-510-1" class="thermometer"></svg>
+    </div>
+    <div class="thermometer-wrapper">
+      <h2 class="thermometer-title">Subscriptions</h2>
+      <svg id="fundraising-thermometer-510-2" class="thermometer"></svg>
+    </div>
   </div>
-  <div class="thermometer-wrapper">
-    <h2 class="thermometer-title">Subscriptions</h2>
-    <svg id="fundraising-thermometer-510-2" class="thermometer"></svg>
-  </div>
-</div>
-
-<script>
-  var fundraising_thermometer_510_1 = {"layout":"1","fill-color":"rgba(231, 97, 81, 1)","goal-amount":"90000","progress-amount":"64568","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
-  var fundraising_thermometer_510_2 = {"layout":"1","fill-color":"rgba(50, 115, 220, 1)","goal-amount":"200000","progress-amount":"0","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
-</script>
-
-<script for="fundraising-thermometer-510-1" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
-<script for="fundraising-thermometer-510-2" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
+  <script>
+    var fundraising_thermometer_510_1 = {"layout":"1","fill-color":"rgba(231, 97, 81, 1)","goal-amount":"90000","progress-amount":"64568","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
+    var fundraising_thermometer_510_2 = {"layout":"1","fill-color":"rgba(50, 115, 220, 1)","goal-amount":"200000","progress-amount":"0","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
+  </script>
+  <script for="fundraising-thermometer-510-1" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
+  <script for="fundraising-thermometer-510-2" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
+</body>
+</html>
