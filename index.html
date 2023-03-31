@@ -1,13 +1,26 @@
 <style>
-  #fundraising-thermometer-510 {
-    width: 800px !important;
-    height: 1050px !important;
+  .thermometer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .thermometer {
+    width: 400px !important;
+    height: 525px !important;
     max-width: none !important;
     max-height: none !important;
   }
 </style>
-<svg id="fundraising-thermometer-510"></svg>
+
+<div class="thermometer-container">
+  <svg id="fundraising-thermometer-510-1" class="thermometer"></svg>
+  <svg id="fundraising-thermometer-510-2" class="thermometer"></svg>
+</div>
+
 <script>
-  var fundraising_thermometer_510 = {"layout":"1","fill-color":"rgba(231, 97, 81, 1)","goal-amount":"90000","progress-amount":"64568","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
+  var fundraising_thermometer_510_1 = {"layout":"1","fill-color":"rgba(231, 97, 81, 1)","goal-amount":"90000","progress-amount":"64568","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
+  var fundraising_thermometer_510_2 = {"layout":"1","fill-color":"rgba(50, 115, 220, 1)","goal-amount":"75000","progress-amount":"56789","show-goal-amount":"1","show-progress-percentage":"1","show-progress-amount":"1","animate-progress-fill":"1"};
 </script>
-<script for="fundraising-thermometer-510" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
+
+<script for="fundraising-thermometer-510-1" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
+<script for="fundraising-thermometer-510-2" type="text/javascript" src="https://d22knjn4n6hjqd.cloudfront.net/thermometer/embed.js"></script>
